@@ -116,7 +116,7 @@ CinemaX/
 
 ## 🔗 GitHub Link
 
-https://github.com/your-username/your-repository-name
+https://github.com/ingi11/OOP-Final-project.git
 
 ---
 
