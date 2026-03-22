@@ -86,7 +86,7 @@ def initialize_files():
     if not os.path.exists("movies.json"):
         
         with open("movies.json", "w") as f:
-            pass
+            json.dump([], f)
 
     # Auto-create bookings.txt if missing
     if not os.path.exists("bookings.txt"):
