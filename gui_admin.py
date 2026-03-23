@@ -40,7 +40,7 @@ class Adminmixin:
         container = tk.Frame(self.root, bg="#1e1e1e")
         container.pack(pady=10, fill="both", expand=True)
 
-        filtered_movies = [m for m in self.movies if search_query.lower() in m.title.lower()]
+        filtered_movies = [m for m in self.movies if m.title.lower().startswith(search_query.lower())]
 
         if not filtered_movies:
             tk.Label(container, text="--- No Movies Found ---", font=("Arial", 14), fg="gray", bg="#1e1e1e").pack(pady=20)
